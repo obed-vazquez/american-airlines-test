@@ -3,10 +3,10 @@
 
 
     <appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
-        <file>${logging.file.path}/${project.artifactId}.log</file>
+        <file>${logging.file.path}/american-airlines-test.log</file>
         <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
             <!-- daily rollover -->
-            <fileNamePattern>${logging.file.path}/%d{yyyy/MM}/${project.artifactId}.gz</fileNamePattern>
+            <fileNamePattern>${logging.file.path}/%d{yyyy/MM}/american-airlines-test.gz</fileNamePattern>
 
             <!-- keep 1 day' worth of history capped at 1GB total size -->
             <maxHistory>1</maxHistory>
@@ -27,12 +27,14 @@
         </filter>
     </appender>
 
-<!--    <logger name="org" level="TRACE"/>-->
 
-    <root level="${logging.level.root}">
+<!--    <logger name="org.white_sdev" level="TRACE"/>-->
+    <logger name="${application.package}" level="${logging.level.root}"/>
+
+    <root level="ERROR">
         <appender-ref ref="FILE" />
     </root>
-    <root level="${logging.level.root}">
+    <root level="ERROR">
         <appender-ref ref="STDOUT" />
     </root>
 

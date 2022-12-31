@@ -1,7 +1,4 @@
-# Application Template
-This is a template for you to start working within a java environment. _Substitute this description for a description of your application_.
-**_Please feel free to add new sections or delete not used sections_**.
-
+# American Airlines
 ## 1) What is this repository for?
 
 ### 1.1) Quick summary
@@ -10,7 +7,7 @@ Version: `0.1-SNAPSHOT`
 Detailed description of your app.
 
 ### 1.2) Disclosure
-Any required disclosures?
+Not associated with American Airlines
 
 ## 2) How do I get set up? ###
 

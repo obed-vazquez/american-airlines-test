@@ -1,6 +1,6 @@
-package org.white_sdev.templates.no_spring_logger_template;
+package org.white_sdev.american_airlines_test;
 @lombok.extern.slf4j.Slf4j
-public class NoSpringTemplate{
+public class AmericanAirlinesTest {
 	public static void main(String[] args){
 		String logID="::main([args]): ";
 		
